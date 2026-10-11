@@ -7533,3 +7533,36 @@ body.mfp-zoom-out-cur {
     color: #171717;
     border: 1px solid #fff;
 }
+/* Phone input - Match other form fields */
+input[type="tel"] {
+    max-width: 100%;
+    margin-bottom: 15px;
+    padding: 16px;
+    height: auto;
+    background-color: transparent;
+    box-shadow: none;
+    display: block;
+    width: 100%;
+    line-height: 1.5em;
+    font-family: "Outfit", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: #737373;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    letter-spacing: 0.3px;
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Match existing icon spacing */
+.form-group input[type="tel"] {
+    padding-left: 55px !important;
+}
+
+/* Hover and focus effects */
+input[type="tel"]:hover,
+input[type="tel"]:focus {
+    border: 1px solid #c5a47e;
+    background: transparent;
+    outline: none;
+}
