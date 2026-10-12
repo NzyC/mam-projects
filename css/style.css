@@ -7566,3 +7566,33 @@ input[type="tel"]:focus {
     background: transparent;
     outline: none;
 }
+
+/* Contact Form Dropdown */
+.form-group select {
+    width: 100%;
+    padding: 16px 45px 16px 20px !important;
+    font-family: "Outfit", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: #737373;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: border 0.3s ease-in-out;
+
+    /* Custom dropdown arrow */
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23737373' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    background-size: 14px;
+}
+
+.form-group select:hover,
+.form-group select:focus {
+    border-color: #c5a47e;
+    outline: none;
+}
