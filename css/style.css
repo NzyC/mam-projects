@@ -7674,3 +7674,26 @@ input[type="tel"]:focus {
         transition: none;
     }
 }
+
+/* Accreditation Logos */
+.gallery .logo-hover {
+    width: 70%;
+    max-width: 280px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.4s ease;
+}
+
+/* Hover Animation */
+.gallery .logo-hover:hover {
+    transform: scale(1.05);
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .gallery .logo-hover {
+        width: 60%;
+        max-width: 220px;
+    }
+}
