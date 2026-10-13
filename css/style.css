@@ -7607,7 +7607,6 @@ input[type="tel"]:focus {
     transform: scale(1.05);
 }
 
-
 /* Floating Enquire Button */
 .floating-enquire {
     position: fixed;
@@ -7649,12 +7648,9 @@ input[type="tel"]:focus {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* Floating Enquire Button */
-.floating-enquire {
-    position: fixed;
-    bottom: 100px;
-    right: 30px;
-    z-index: 9999;
+.floating-enquire i {
+    font-size: 14px;
+    transition: transform 0.35s ease;
 }
 
 .floating-enquire:hover i {
