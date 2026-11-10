@@ -7697,3 +7697,51 @@ input[type="tel"]:focus {
         max-width: 220px;
     }
 }
+
+/* Static image with subtle pulsing animation */
+.static-circle-image {
+    position: relative;
+    display: inline-block;
+    width: 220px;
+    height: 220px;
+    animation: gentlePulse 4s ease-in-out infinite;
+}
+
+.static-circle-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border: none;
+    border-radius: 0;
+}
+
+/* Gentle growing and shrinking animation */
+@keyframes gentlePulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.06);
+    }
+}
+
+/* About section sizing */
+.about .static-circle-image {
+    width: 210px;
+    height: 210px;
+}
+
+/* Mobile visibility */
+@media screen and (max-width: 991px) {
+    .static-circle-image {
+        display: none;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .static-circle-image {
+        animation: none;
+    }
+}
